@@ -23,6 +23,10 @@ p {
     font-size: 40fr;
 }
 
+a {
+    color: rgb(165,0,36)
+}
+
 .door {
     transform-origin: bottom center;
     align-items: center;
