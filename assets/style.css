@@ -1,3 +1,9 @@
+@import "https://unpkg.com/open-props@1.6.17/easings.min.css";
+
+:root {
+    --door-scale: 1.05;
+}
+
 body {
     background-color: rgb(0,0,0);
     display: grid;
@@ -18,7 +24,43 @@ p {
 }
 
 .door {
+    transform-origin: bottom center;
     align-items: center;
     width: 300px;
     height: auto;
+    position: relative;
+}
+
+@keyframes knock {
+    4% {
+    transform: scale(1);
+    }
+    8% {
+    transform: scale(var(--door-scale));
+    }
+    16% {
+    transform: scale(1);
+    } 
+    24% {
+    transform: scale(1);
+    } 
+    28% {
+    transform: scale(var(--door-scale));
+    }
+    36% {
+    transform: scale(1);
+    }
+    44% {
+    transform: scale(1);
+    }
+    48% {
+    transform: scale(var(--door-scale));
+    }
+    56% {
+    transform: scale(1);
+    }
+}
+
+[anim="knock"]{
+    animation: knock var(--ease-elastic-in-1) 2000ms infinite alternate;
 }
