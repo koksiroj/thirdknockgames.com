@@ -1,70 +1,88 @@
 @import "https://unpkg.com/open-props@1.6.17/easings.min.css";
 
 :root {
-    --door-scale: 1.05;
+    --door-scale: 1.02;
 }
 
 body {
-    background-color: rgb(0,0,0);
+    background-color: rgb(5,5,5);
     display: grid;
     justify-content: center;
     text-align: center;
 }
 
+.container {
+    margin-top: 2vw;
+}
+
 h1 {
     font-family: "Girassol";
-    color: white;
-    font-size: 64fr;
+    color: rgb(230,230,230);
+    font-size: 72px;
+    margin: 0;
 }
 
 p {
     font-family: "Lato";
-    color: white;
-    font-size: 40fr;
+    color: rgb(180,180,180);
+    font-size: 20px;
 }
 
 a {
-    color: rgb(165,0,36)
+    font-family: "Lato";
+    color: rgb(165,0,36);
+    font-size: 20px;
 }
 
 .door {
-    transform-origin: bottom center;
+    transform-origin: center;
+
     align-items: center;
     width: 300px;
     height: auto;
+}
+
+#frame {
     position: relative;
+    z-index: 1;
+}
+
+#door {
+    position: absolute;
+    z-index: 0;
 }
 
 @keyframes knock {
+    2% {
+    transform: scale(1);
+    }
     4% {
-    transform: scale(1);
-    }
-    8% {
     transform: scale(var(--door-scale));
     }
-    16% {
+    6% {
     transform: scale(1);
     } 
-    24% {
+    10% {
     transform: scale(1);
     } 
-    28% {
+    12% {
     transform: scale(var(--door-scale));
     }
-    36% {
+    14% {
     transform: scale(1);
     }
-    44% {
+    18% {
     transform: scale(1);
     }
-    48% {
+    20% {
     transform: scale(var(--door-scale));
     }
-    56% {
+    22% {
     transform: scale(1);
     }
 }
 
 [anim="knock"]{
-    animation: knock var(--ease-elastic-in-1) 2000ms infinite alternate;
+    /* is hitting twice the amount? why?*/
+    animation: knock var(--ease-elastic-in-3) 4000ms infinite;
 }
