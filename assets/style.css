@@ -1,7 +1,7 @@
 @import "https://unpkg.com/open-props@1.6.17/easings.min.css";
 
 :root {
-    --door-scale: 1.02;
+    --door-scale: 1.005;
 }
 
 body {
