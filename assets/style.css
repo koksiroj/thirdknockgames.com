@@ -1,7 +1,7 @@
 @import "https://unpkg.com/open-props@1.6.17/easings.min.css";
 
 :root {
-    --door-scale: 1.02;
+    --door-scale: 1.005;
 }
 
 body {
@@ -55,19 +55,23 @@ a {
 
 #subtext {
     margin: 10px;
-    width: 60vmax;
-    color: rgb(150,150,150);
+    width: 600px;
+    color: rgb(5,5,5);
     font-size: 16px;
 }
 
 #gamer {
-    margin: 400px;
+    margin: 300px;
 }
 
 #newdoor {
-    width: 50vh;
+    width: 30vh;
     height: auto;
     margin: 100px;
+}
+
+#red {
+    color: rgb(165,0,36);
 }
 
 @media only screen and (hover: none) and (pointer: coarse){
