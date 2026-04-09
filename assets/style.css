@@ -53,6 +53,27 @@ a {
     z-index: 0;
 }
 
+#subtext {
+    margin: 10px;
+    width: 600px;
+    color: rgb(5,5,5);
+    font-size: 16px;
+}
+
+#gamer {
+    margin: 300px;
+}
+
+#newdoor {
+    width: 30vh;
+    height: auto;
+    margin: 100px;
+}
+
+#red {
+    color: rgb(165,0,36);
+}
+
 @media only screen and (hover: none) and (pointer: coarse){
     h1{
         font-size: 48px;
@@ -62,6 +83,9 @@ a {
     }
     a{
         font-size: 12px;
+    }
+    #subtext {
+        font-size: 10px;
     }
 }
 
