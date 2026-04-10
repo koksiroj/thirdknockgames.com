@@ -4,19 +4,26 @@
     --door-scale: 1.005;
 }
 
+html, body{
+    overflow-x: hidden;
+}
+
 body {
     background-color: rgb(5,5,5);
-    display: grid;
+    display: flex;
     justify-content: center;
     text-align: center;
+    position: relative;
 }
 
 .container {
     margin-top: 2vw;
+    justify-content: center;
 }
 
 .copy {
-    margin-bottom: 10vw;
+    margin-left: 20%;
+    margin-right: 20%;
 }
 
 h1 {
@@ -55,19 +62,15 @@ a {
 
 #subtext {
     margin: 10px;
-    width: 600px;
     color: rgb(5,5,5);
     font-size: 16px;
 }
 
-#gamer {
-    margin: 300px;
-}
-
-#newdoor {
+#logo {
     width: 30vh;
     height: auto;
     margin: 100px;
+    filter:drop-shadow(0 0 0.3rem crimson)
 }
 
 #red {
@@ -86,6 +89,9 @@ a {
     }
     #subtext {
         font-size: 10px;
+    }
+    #logo {
+        margin: 50px;
     }
 }
 
