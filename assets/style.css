@@ -22,25 +22,38 @@ body {
 }
 
 .copy {
-    margin-left: 20%;
-    margin-right: 20%;
+    justify-content: left;
+    text-align: left;
+    margin-left: 36%;
+    margin-right: 36%;
 }
 
 h1 {
-    font-family: "Girassol";
+    font-family: "Bebas Neue";
     color: rgb(230,230,230);
     font-size: 72px;
     margin: 0;
 }
 
 p {
-    font-family: "Lato";
+    font-family: "Assistant";
+    color: rgb(180,180,180);
+    font-size: 20px;
+}
+
+li::marker{
+    color: rgb(165,0,36);
+}
+
+li {
+    
+    font-family: "Assistant";
     color: rgb(180,180,180);
     font-size: 20px;
 }
 
 a {
-    font-family: "Lato";
+    font-family: "Assistant";
     color: rgb(165,0,36);
     font-size:20px;
 }
@@ -64,6 +77,10 @@ a {
     margin: 10px;
     color: rgb(5,5,5);
     font-size: 16px;
+}
+
+#contact {
+    text-align: center;
 }
 
 #logo {
