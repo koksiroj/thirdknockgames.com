@@ -24,8 +24,9 @@ body {
 .copy {
     justify-content: left;
     text-align: left;
-    margin-left: 36%;
-    margin-right: 36%;
+    max-width: 760px;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 h1 {
