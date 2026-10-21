@@ -24,7 +24,7 @@ body {
 .copy {
     justify-content: left;
     text-align: left;
-    max-width: 760px;
+    max-width: 720px;
     margin-left: 10%;
     margin-right: 10%;
 }
@@ -32,31 +32,31 @@ body {
 h1 {
     font-family: "Bebas Neue";
     color: rgb(230,230,230);
-    font-size: 72px;
+    font-size: 60px;
     margin: 0;
 }
 
 p {
     font-family: "Assistant";
     color: rgb(180,180,180);
-    font-size: 20px;
+    font-size: 16px;
 }
 
 li::marker{
-    color: rgb(165,0,36);
+    color: rgb(182,30,30);
 }
 
 li {
     
     font-family: "Assistant";
     color: rgb(180,180,180);
-    font-size: 20px;
+    font-size: 16px;
 }
 
 a {
     font-family: "Assistant";
-    color: rgb(165,0,36);
-    font-size:20px;
+    color: rgb(182,30,30);
+    font-size:16px;
 }
 
 .door {
@@ -85,14 +85,14 @@ a {
 }
 
 #logo {
-    width: 30vh;
+    max-width: 440px;
     height: auto;
-    margin: 100px;
+    margin: 10%;
     
 }
 
 #red {
-    color: rgb(165,0,36);
+    color: rgb(182,30,30);
 }
 
 @media only screen and (hover: none) and (pointer: coarse){
