@@ -90,7 +90,7 @@ a {
 }
 
 #logo {
-    max-width: 90%;
+    max-width: 400px;
     height: auto;
     margin: 10%;
     
@@ -115,6 +115,9 @@ a {
     }
     body{
         width: 80%;
+    }
+    #logo{
+        max-width: 90%;
     }
 }
 
